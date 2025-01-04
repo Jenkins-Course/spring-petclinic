@@ -1,7 +1,7 @@
 pipeline {
 	agent any
 	environment {
-	   MVN= "/usr/share/maven/bin"
+	   MVN= '/usr/share/maven/bin'
         }
 	options {
  	    timeout(time: 1, unit: 'HOURS')
@@ -18,7 +18,7 @@ pipeline {
             }
            stage ('Build the code') {
   	      steps {
-                  sh script: "$MVN clean package"
+                  sh script: '/usr/share/maven/bin clean package'
               }
               
            }
