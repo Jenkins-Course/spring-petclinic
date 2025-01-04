@@ -1,4 +1,4 @@
-pipelne {
+pipeline {
 	agent any
 	environment {
 	   MVN= "/usr/share/maven/bin"
